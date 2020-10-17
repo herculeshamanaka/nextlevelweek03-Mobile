@@ -20,7 +20,7 @@ export default function Header({ title, showCancelButton = true }: HeaderProps) 
   return (
     <View style={styles.container}>
       <BorderlessButton onPress={navigation.goBack}>
-        <Feather name="arrow-left" size={24} color="#15b6d6" />
+        <Feather name="arrow-left" size={24} color="#fff" />
       </BorderlessButton>
       
       <Text style={styles.title}>
@@ -29,7 +29,7 @@ export default function Header({ title, showCancelButton = true }: HeaderProps) 
 
       { showCancelButton ? (
           <BorderlessButton onPress={handleGoBackToHome}>
-            <Feather name="x" size={24} color="#ff669d" />
+            <Feather name="x" size={24} color="#ff009d" />
           </BorderlessButton>
         ) : (
           <View />
@@ -42,7 +42,7 @@ export default function Header({ title, showCancelButton = true }: HeaderProps) 
 const styles = StyleSheet.create({
   container: {
     padding: 24,
-    backgroundColor: '#f9fafc',
+    backgroundColor: '#15c3d6',
     borderBottomWidth: 1,
     borderColor: '#dde3f0',
     paddingTop: 44,
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
 
   title: {
     fontFamily: 'Nunito_600SemiBold',
-    color: '#8fa7b3',
+    color: '#fff',
     fontSize: 16,
   }
 });
